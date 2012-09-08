@@ -1,0 +1,481 @@
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/* Universal
+--------------------------------------------- */
+
+body {
+  font-size: 22px;
+  background: #fff url(../images/bg.png);
+}
+
+body, input, textarea {
+  font-family: "SansationRegular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #fff;
+  text-shadow: 0 1px 3px #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 820px;
+}
+
+/* Header
+--------------------------------------------- */
+
+#header {
+  background: #555 url(../images/header.jpg) repeat-x center center;
+  height: 565px;
+}
+
+#header_elements {
+  position: relative;
+  width: 100%;
+  height: 565px;
+  overflow: hidden;
+}
+
+#header_content {
+  position: absolute;
+  z-index: 200;
+  left: 50%;
+  margin-left: -410px;
+}
+
+@-moz-keyframes Fly {
+	0% { left: 100%; margin-left: 0px;}
+	100% { left: 50%; margin-left: 110px;}
+	}
+
+@-o-keyframes Fly {
+	0% { left: 100%; margin-left: 0px;}
+	100% { left: 50%; margin-left: 110px;}
+	}
+
+@-webkit-keyframes Fly {
+	0% { left: 100%; margin-left: 0px;}
+	100% { left: 50%; margin-left: 110px;}
+	}
+
+@keyframes Fly {
+	0% { left: 100%; margin-left: 0px;}
+	100% { left: 50%; margin-left: 110px;}
+	}
+
+#clouds {
+  position: absolute;
+  background: url(../images/header_clouds.png) no-repeat;
+  width: 578px;
+  height: 258px;
+  left: 50%;
+}
+
+#balloon {
+  -moz-animation: Fly 16s both ease;
+  -o-animation: Fly 16s both ease;
+  -webkit-animation: Fly 16s both ease;
+  animation: Fly 16s both ease;
+  
+  position: absolute;
+  background: url(../images/header_balloon.png) no-repeat;
+  width: 118px;
+  height: 117px;
+  top: 30px;
+  left: 50%;
+  margin-left: 110px;
+}
+
+#rock {
+  position: absolute;
+  background: url(../images/header_rock.png) no-repeat;
+  width: 1319px;
+  height: 411px;
+  left: 50%;
+  margin-left: -740px;
+}
+
+#trees {
+  position: absolute;
+  background: url(../images/header_trees.png) no-repeat;
+  width: 689px;
+  height: 225px;
+  right: 0;
+  bottom: 155px;
+}
+
+#grass {
+  position: absolute;
+  background: url(../images/header_grass.png) repeat-x;
+  width: 100%;
+  height: 247px;
+  bottom: 0;
+}
+
+#elements {
+  position: absolute;
+  background: url(../images/header_elements.png) no-repeat;
+  width: 432px;
+  height: 56px;
+  top: 82px;
+  left: 50%;
+  margin-left: 28px;
+}
+
+h1 {
+  margin-top: 40px;
+  text-indent: -10000px;
+  background: url(../images/mino_monsters.png);
+  width: 228px;
+  height: 151px;
+  float: left;
+}
+
+#description {
+  width: 403px;
+  padding-left: 333px;
+  float: right;
+  margin-top: 20px;
+  padding-top: 55px;
+  line-height: 1.2;
+  background: url(../images/rockman.png) no-repeat top left;
+}
+
+#description p {
+  margin-left: 14px;
+}
+
+.bold {
+  font-family: "SansationBold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#free {
+  margin-top: 30px;
+  width: 282px;
+  height: 91px;
+  background: url(../images/free.png) no-repeat bottom right;
+}
+
+#get_the_app {
+  display: block;
+  text-indent: -10000px;
+  background: url(../images/get_the_app.png) no-repeat;
+  background-position: 0 top;
+  width: 247px;
+  height: 91px;
+}
+
+#get_the_app:hover {
+  background-position: 0 center;
+  cursor: pointer; cursor: hand
+}
+
+#get_the_app:active {
+  background-position: 0 bottom;
+}
+
+#iphone {
+  display: block;
+  background: url(../images/iphone_icon.png) no-repeat left;
+  color: #e7f3d8;
+  font-size: 15px;
+  padding: 8px 0 0 30px;
+  margin-left: 14px;
+  text-shadow: 0 -1px 0px #000;
+}
+
+/* Screenshots
+--------------------------------------------- */
+
+#screenshots_bg {
+  height: 333px;
+  background: url(../images/screenshots_bg.png) repeat-x;
+}
+
+#screenshots {
+  height: 333px;
+  background: url(../images/collect_train_battle.png) no-repeat center left;
+}
+
+#screenshot_wrapper {
+  float: right;
+  margin-top: 30px;
+  width: 376px;
+}
+
+#screenshots p {
+  color: #606060;
+  font-size: 12px;
+  text-shadow: 0 1px 0px #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#screenshot_wrapper a {
+  width: 174px;
+  height: 102px;
+  background: #000;
+  float: left;
+  border: 3px solid #fff;
+  -moz-box-shadow: 0 1px 3px #888;
+  -webkit-box-shadow: 0 1px 3px #888;
+  box-shadow: 0 1px 3px #888;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 8px 0 0 8px;
+}
+
+#screenshot_wrapper a img:hover {
+  opacity: .9;
+}
+
+/* Trailer
+--------------------------------------------- */
+
+#trailer_bg {
+  background: #443e3e url(../images/trailer_bg.png);
+  -moz-box-shadow:    inset 0 2px 5px #262323;
+  -webkit-box-shadow: inset 0 2px 5px #262323;
+  box-shadow:         inset 0 2px 5px #262323;
+}
+
+#trailer_bg .wrapper {
+  padding: 20px 0;
+}
+
+h2 {
+  float: left;
+  background: url(../images/trailer.png) no-repeat;
+  text-indent: -10000px;
+  width: 124px;
+  height: 30px;
+}
+
+#trailer_bg a {
+  display:block;
+  float: right;
+  background: url(../images/share_icon.png) no-repeat center right;
+  width: 80px;
+  height: 24px;
+  font-size: 11px;
+  color: #696565;
+  text-transform: uppercase;
+  line-height: 2.6;
+  text-shadow: 0 1px 0px #000;
+  margin-top: 4px;
+}
+
+#trailer_bg a:hover {
+  color: #aba8a8;
+}
+
+#trailer {
+  background: url(../images/movie_bg.png) no-repeat top left;
+  width: 846px;
+  height: 504px;
+  float: left;
+}
+
+#trailer img {
+  padding: 36px 0 0 73px;
+}
+
+/* Testimonials
+--------------------------------------------- */
+
+#testimonials ul {
+  float: left;
+  margin: 40px 0;
+  background: url(../images/what_people_are_saying.png) no-repeat top left;
+}
+
+#testimonials ul li {
+  margin: 0 0 13px 110px;
+}
+
+#testimonials ul li p{
+  background: url(../images/text_bubble.png) no-repeat;
+  width: 356px;
+  height: 55px;
+  font-size: 18px;
+  color: #323232;
+  padding-left: 14px;
+  line-height: 2.6;
+  text-shadow: none;
+}
+
+.person {
+  font-size: 14px;
+  text-shadow: none;
+  color: #989898;
+  margin-left: 14px;
+}
+
+.person a {
+  color: #528430;
+}
+
+#social {
+  float: right;
+  background: url(../images/social_bg.png) no-repeat;
+  width: 286px;
+  height: 236px;
+  margin-top: 40px;
+  padding: 0 20px;
+  position: relative;
+}
+
+#social h3 {
+  font-size: 14px;
+  color: #6d825d;
+  text-transform: uppercase;
+  text-shadow: 0 1px #fff;
+  margin: 16px 0;
+}
+
+#social p {
+  height: 53px;
+  padding: 10px 0 0 66px;
+  font-size: 18px;
+  line-height: 1.3;
+  text-shadow: 0 1px #576948;
+}
+
+#social #facebook {
+  background: url(../images/facebook_logo.png) no-repeat center left;
+  width: 174px;
+  margin-top: 30px;
+}
+
+#social #twitter {
+  background: url(../images/twitter_logo.png) no-repeat center left;
+  width: 152px;
+  margin-top: 28px;
+}
+
+#facebook_button, #twitter_button {
+  position: absolute;
+  right: 20px;
+  padding: 5px 5px 2px 5px;
+  background: #fff;
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.4); /* drop shadow */
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.4); /* drop shadow */
+  box-shadow: 0 1px 1px rgba(0,0,0,.4); /* drop shadow */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#facebook_button {
+  top: 78px;
+}
+
+#twitter_button {
+  top: 168px;
+}
+
+/* Logos
+--------------------------------------------- */
+
+#logos {
+  background: url(../images/logo_bg.png) no-repeat;
+  width: 828px;
+  height: 93px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#logos #monster {
+  position: absolute;
+  background: url(../images/blue_monster.png) no-repeat;
+  width: 49px;
+  height: 68px;
+  bottom: 63px;
+  left: 788px;
+  -webkit-transition: bottom 0.5s ease-out;
+  -moz-transition: bottom 0.5s ease-out;
+  -o-transition: bottom 0.5s ease-out;
+}
+
+#logos #monster:hover {
+  bottom: 68px;
+}
+
+#logos a {
+  display: block;
+  float: left;
+  margin: 30px 33px 0 33px;
+  text-indent: -10000px;
+}
+
+#logos #forbes {
+  background: url(../images/forbes_logo.png) no-repeat;
+  width: 96px;
+  height: 24px;
+  margin-top: 36px;
+}
+
+#logos #techcrunch {
+  background: url(../images/techcrunch_logo.png) no-repeat;
+  width: 67px;
+  height: 35px;
+}
+
+#logos #bbc {
+  background: url(../images/bbc_logo.png) no-repeat;
+  width: 122px;
+  height: 36px;
+}
+
+#logos #wsj {
+  background: url(../images/wsj_logo.png) no-repeat;
+  width: 78px;
+  height: 39px;
+}
+
+#logos #mashable {
+  background: url(../images/mashable_logo.png) no-repeat;
+  width: 126px;
+  height: 25px;
+  margin-top: 36px;
+}
+
+/* Footer
+--------------------------------------------- */
+
+#footer {
+  width: 100%;
+  height: 147px;
+  background: url(../images/header_grass.png) repeat-x top left;
+  margin-top: 40px;
+}
+
+#footer .wrapper a {
+  display: block;
+  text-indent: -10000px;
+  background: url(../images/app_store_button.png) no-repeat;
+  width: 152px;
+  height: 51px;
+  float: right;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
