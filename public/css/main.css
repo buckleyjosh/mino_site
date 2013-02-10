@@ -395,6 +395,21 @@ h2 {
   top: 168px;
 }
 
+#forum {
+  width: 828px;
+  margin: 0 auto;
+  position: relative;
+  text-align:center;
+  margin-bottom:5px;
+}
+
+#forum a {
+  font-size: 18px;
+  text-shadow: none;
+  color: #989898;
+  color: #528430;
+}
+
 /* Logos
 --------------------------------------------- */
 
