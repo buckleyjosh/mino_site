@@ -2,6 +2,8 @@ MinoSite::Application.routes.draw do
   get "static_pages/home"
 
   get "static_pages/contact"
+  
+  match "forum" => redirect("http://www.minoforum.com/")
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
